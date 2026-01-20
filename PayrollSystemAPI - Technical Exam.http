@@ -1,0 +1,6 @@
+@PayrollSystemAPI___Technical_Exam_HostAddress = http://localhost:5053
+
+GET {{PayrollSystemAPI___Technical_Exam_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
