@@ -31,7 +31,8 @@ Example: `DEL-12340-17MAY1994` for DELA CRUZ born on May 17, 1994
 
 ### Pay Calculation
 - Employees receive **2x daily rate** for each scheduled working day
-- Employees receive **100% daily rate** on their birthday (even if not a working day)
+- Employees receive **100% daily rate bonus** on their birthday
+- **Birthday bonuses stack with work day pay**: If an employee's birthday falls on a working day, they receive both the work day pay (2x daily rate) AND the birthday bonus (1x daily rate) for a total of 3x daily rate that day
 
 ## Setup
 
@@ -186,7 +187,7 @@ Content-Type: application/json
 **Pay Computation:**
 - Period: May 16-20, 2011
 - Working Days: Mon(16), Wed(18), Fri(20) = 3 days × 2,000 × 2 = 12,000
-- Birthday: May 17 (Tue) = 2,000
+- Birthday: May 17 (Tue - not a working day) = 2,000
 - **Total: Php 14,000.00**
 
 ### Sample 2: SY, ANNIE
@@ -201,7 +202,8 @@ Content-Type: application/json
 **Pay Computation:**
 - Period: September 1-9, 2011
 - Working Days: Thu(1), Sat(3), Tue(6), Thu(8) = 4 days × 1,500 × 2 = 12,000
-- Birthday: Sep 1 is already a working day (counted in above)
+- Birthday Bonus: Sep 1 (Thursday - also a working day) = 1,500
+  - Sep 1 receives both work day pay (3,000) AND birthday bonus (1,500) = 4,500
 - **Total: Php 13,500.00**
 
 ## Project Structure
