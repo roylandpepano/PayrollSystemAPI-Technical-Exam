@@ -208,25 +208,25 @@ Content-Type: application/json
 
 ```
 PayrollSystemAPI/
-??? Controllers/
-?   ??? EmployeesController.cs
-??? Models/
-?   ??? Employee.cs
-?   ??? DTOs/
-?       ??? CreateEmployeeRequest.cs
-?       ??? UpdateEmployeeRequest.cs
-?       ??? ComputePayrollRequest.cs
-?       ??? PayrollResponse.cs
-??? Repositories/
-?   ??? EmployeeRepository.cs
-??? Services/
-?   ??? EmployeeIDGenerator.cs
-?   ??? PayrollService.cs
-??? Database/
-?   ??? PayrollDB_Setup.sql
-??? Program.cs
-??? appsettings.json
-??? README.md
+    Controllers/
+        EmployeesController.cs
+    Models/
+        Employee.cs
+        DTOs/
+            CreateEmployeeRequest.cs
+            UpdateEmployeeRequest.cs
+            ComputePayrollRequest.cs
+            PayrollResponse.cs
+    Repositories/
+        EmployeeRepository.cs
+    Services/
+        EmployeeIDGenerator.cs
+        PayrollService.cs
+    Database/
+        DatabaseSetup.sql
+    Program.cs
+    appsettings.json
+    README.md
 ```
 
 ## License
