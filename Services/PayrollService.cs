@@ -46,7 +46,7 @@ namespace PayrollSystemAPI___Technical_Exam.Services
         {
             decimal totalPay = 0;
 
-            for (DateTime date = start; date <= end; date = date.AddDays(1))
+            for (DateTime date = start.Date; date <= end.Date; date = date.AddDays(1))
             {
                 bool isWorkDay = IsScheduled(emp.WorkingDays, date.DayOfWeek);
                 bool isBirthday = date.Month == emp.BirthDate.Month && date.Day == emp.BirthDate.Day;
